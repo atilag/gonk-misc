@@ -150,8 +150,8 @@ ProcessList::unordered_b2g_processes()
   const vector<Process*>& processes = all_processes();
   for (vector<Process*>::const_iterator it = processes.begin();
        it != processes.end(); ++it) {
-    if ((*it)->exe() == "/system/b2g/plugin-container" || 
-        (*it)->exe() == "/system/b2g/b2g") {
+    if ((*it)->exe() == "/system/b2g/hard/plugin-container" || 
+        (*it)->exe() == "/system/b2g/hard/b2g") {
       m_unordered_b2g_processes.push_back(*it);
     }
   }
